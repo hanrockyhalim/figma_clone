@@ -1,6 +1,13 @@
+"use client";
+
+import Live from "@/components/Live";
 import { Room } from "./Room";
-import { CollaborativeApp } from "./CollaborativeApp";
 
 export default function Page() {
-  return <h1 className="text-[100px] text-white">Figma Clone</h1>;
+  return (
+    <div className="h-[100vh] w-full flex justify-center items-center">
+      <h1 className="text-2xl text-white">Figma Clone</h1>
+      <Live />
+    </div>
+  );
 }
